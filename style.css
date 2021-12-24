@@ -1,5 +1,5 @@
 .h1 {
-    border: 1px solid black;
+    border: 10px solid black;
 }
 
 th {
@@ -16,5 +16,15 @@ table tr {
     list-style-type: none;
     flex: 2;
     display: flex;
+}
+
+td {
+    font-size: 1.3em;
+    list-style-type: none;
+    border: 1px solid black;
+    display: inline;
+    text-align: center;
+    flex: 1;
+    padding: 12px;
 }
 

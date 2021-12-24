@@ -40,10 +40,11 @@
 
 $.ajax({
   url: 'https://dev-mind.fr/training/android/windows',
+  //url: 'https://liwei-xu.cleverapps.io/api/windows',
   dataType: 'json',
   success: function(data) {
       for (var i=0; i<data.length; i++) {
-          var row = $('<tr><td>' + data[i].id+ '</td><td>' + data[i].name + '</td><td>' + data[i].sta + '</td></tr>');
+          var row = $('<tr><td>' + data[i].room.id+ '</td><td>' + data[i].id +  '</td><td>' + data[i].status + '</td><td>' + data[i].room.currentTemperature + '</td><td>' + data[i].room.targetTemperature + '</td><td>' + data[i].name + '</td><td>' + 'Please Switch' + '</td></tr>');
           $('#myTable').append(row);
       }
   },
